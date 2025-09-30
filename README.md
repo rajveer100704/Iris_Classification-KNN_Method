@@ -1,44 +1,58 @@
-🌸 K-Nearest Neighbors (KNN) Classification on Iris Dataset
-📌 Overview
+# 🌸 K-Nearest Neighbors (KNN) Classification on Iris Dataset  
 
-This project demonstrates K-Nearest Neighbors (KNN) classification using the classic Iris dataset. The goal is to explore how instance-based learning works, understand the role of distance metrics, and evaluate model performance across different values of K.
+## 📌 Overview  
+This project applies **K-Nearest Neighbors (KNN)** on the Iris dataset to classify flower species. It demonstrates instance-based learning, the impact of feature scaling, and the effect of varying K values on classification performance.  
 
-🔧 Tools & Libraries
+---
 
-Python
+## 🔧 Tools & Libraries  
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- Matplotlib, Seaborn  
 
-Pandas, NumPy
+---
 
-Scikit-learn
+## 📊 Project Workflow  
+1. **Dataset Loading** – Loaded Iris dataset from Kaggle.  
+2. **Preprocessing** – Removed unnecessary columns and normalized features with `StandardScaler`.  
+3. **Model Training** – Implemented KNN using different values of `k`.  
+4. **Evaluation** – Measured accuracy, confusion matrix, and classification report.  
+5. **Visualization** – Plotted accuracy vs. K and decision boundaries for 2D features.  
 
-Matplotlib, Seaborn
+---
 
-📊 Project Workflow
+## 📈 Results  
+- Achieved high accuracy (best around **K = optimal value from notebook**).  
+- Normalization improved distance-based performance.  
+- Decision boundary plots show clear separation between Iris species.  
 
-Dataset Loading – Iris dataset from Kaggle.
+---
 
-Preprocessing – Removed unnecessary columns and normalized features using StandardScaler.
+## 🧠 Key Learnings  
+- Why **feature scaling** is critical for KNN.  
+- How **K selection** affects bias-variance tradeoff.  
+- KNN’s ability to handle **multi-class classification**.  
+- Influence of **distance metrics** on results.  
 
-Model Training – Implemented KNN with varying k values.
+---
 
-Evaluation – Measured accuracy, confusion matrix, and classification report.
+## 📂 Screenshots
+- Accuracy V/S K
+- <img width="883" height="690" alt="Screenshot 2025-09-30 193102" src="https://github.com/user-attachments/assets/a9802610-904a-49a7-baa6-f91fe5fbad98" />
 
-Visualization – Plotted accuracy vs. K and decision boundaries for 2D features.
+- Decision Boundary
+- <img width="1039" height="814" alt="Screenshot 2025-09-30 193129" src="https://github.com/user-attachments/assets/77b7acb0-d5e8-42dd-819b-5a7381d9a2dc" />
 
-📈 Results
+---
 
-Best accuracy achieved around K = (check results in notebook).
+## 🚀 How to Run  
+1. Clone this repository  
+   ```bash
+   git clone https://github.com/your-username/KNN-Iris-Classification.git
+   cd KNN-Iris-Classification
 
-Decision boundary plots highlight the separation between Iris species.
+2.pip install -r requirements.txt
 
-Normalization significantly improved distance-based classification performance.
+3.jupyter notebook knn_classification.ipynb
 
-🧠 Key Learnings
-
-Importance of feature scaling in distance-based algorithms.
-
-Trade-off in selecting K (small K → sensitive to noise, large K → smoother boundary).
-
-KNN works naturally for multi-class classification.
-
-Distance metric choice impacts results.
