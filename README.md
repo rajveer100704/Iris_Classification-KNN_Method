@@ -52,7 +52,7 @@ This project applies **K-Nearest Neighbors (KNN)** on the Iris dataset to classi
    git clone https://github.com/your-username/KNN-Iris-Classification.git
    cd KNN-Iris-Classification
 
-2.pip install -r requirements.txt
+   2.pip install -r requirements.txt
 
-3.jupyter notebook knn_classification.ipynb
+   3.jupyter notebook knn_classification.ipynb
 
